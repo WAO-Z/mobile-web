@@ -1,0 +1,233 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  color: #000;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  position: relative;
+}
+
+header::before {
+  content: "2";
+  width: 3.73333vw;
+  height: 3.73333vw;
+  border-radius: 1.86667vw;
+  background-color: red;
+  color: #fff;
+  font-size: 2.66667vw;
+  text-align: center;
+  position: absolute;
+  top: 6vw;
+  right: 2.4vw;
+  z-index: 1;
+}
+
+header .w {
+  width: 100vw;
+}
+
+header .w .top {
+  display: flex;
+  justify-content: space-between;
+  width: 94vw;
+  height: 17.33333vw;
+  margin-left: 3.06667vw;
+}
+
+header .w .top .back {
+  width: 16.4vw;
+  height: 7.6vw;
+  border: 0.4vw solid #ff9344;
+  font-size: 3.46667vw;
+  text-align: center;
+  line-height: 7.6vw;
+  border-radius: 2.66667vw;
+  margin-top: 6.4vw;
+}
+
+header .w .top h3 {
+  font-size: 3.46667vw;
+  margin-top: 8.53333vw;
+}
+
+header .w .top img {
+  width: 8.26667vw;
+  height: 5.73333vw;
+  margin-top: 7.2vw;
+}
+
+header .w .log-in {
+  display: flex;
+}
+
+header .w .log-in img {
+  width: 22.66667vw;
+  height: 22.66667vw;
+  margin-left: 3.2vw;
+}
+
+header .w .log-in div {
+  margin-left: 3.2vw;
+  line-height: 9.2vw;
+}
+
+header .w .log-in div h5 {
+  font-size: 4vw;
+}
+
+header .w .log-in div p {
+  font-size: 3.46667vw;
+  color: #9d9d9d;
+}
+
+header .w .log-in i {
+  font-size: 11.6vw;
+  margin-left: 34.66667vw;
+}
+
+header .w .box {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3.46667vw;
+}
+
+header .w .box .box1 {
+  width: 26vw;
+  height: 20.13333vw;
+  background: url("../img/我的点评.png");
+  background-size: cover;
+  text-align: center;
+  line-height: 33.33333vw;
+  font-size: 3.46667vw;
+}
+
+header .w .box .box2 {
+  width: 26vw;
+  height: 20.13333vw;
+  background: url("../img/我的收藏.png") no-repeat;
+  background-size: contain;
+  text-align: center;
+  line-height: 33.33333vw;
+  font-size: 3.46667vw;
+}
+
+header .w .box .box3 {
+  width: 26vw;
+  height: 20.13333vw;
+  background: url("../img/我的优惠券.png") no-repeat;
+  background-size: cover;
+  text-align: center;
+  line-height: 33.33333vw;
+  font-size: 3.46667vw;
+}
+
+main {
+  margin-top: 3.46667vw;
+}
+
+main .box1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+main table {
+  height: 80.93333vw;
+  font-size: 3.46667vw;
+  margin-left: 2.8vw;
+}
+
+main table tr:nth-of-type(1) img {
+  width: 7.6vw;
+  height: 9.86667vw;
+}
+
+main table tr:nth-of-type(2) img {
+  width: 9.46667vw;
+  height: 9.86667vw;
+}
+
+main table tr:nth-of-type(3) img {
+  width: 12.53333vw;
+  height: 7.73333vw;
+}
+
+main table tr:nth-of-type(4) img {
+  width: 7.86667vw;
+  height: 7.86667vw;
+}
+
+main table tr:nth-of-type(5) img {
+  width: 10.4vw;
+  height: 10.53333vw;
+}
+
+main table tr:nth-of-type(6) img {
+  width: 11.2vw;
+  height: 7.86667vw;
+}
+
+main .gt {
+  margin-right: 2.8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80.93333vw;
+  font-size: 3.2vw;
+}
+
+main .gt img {
+  width: 3.33333vw;
+  height: 3.46667vw;
+}
+
+main .logout {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20vw;
+}
+
+main .logout span {
+  display: inline-block;
+  width: 19.6vw;
+  height: 10.13333vw;
+  border-radius: 5.06667vw;
+  background-color: #ff9344;
+  color: #fff;
+  font-size: 3.2vw;
+  text-align: center;
+  line-height: 10.13333vw;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 16vw;
+  background-color: #fff;
+  text-align: center;
+}
+
+nav img {
+  width: 9.73333vw;
+}
+
+nav h5 {
+  font-size: 3.46667vw;
+  font-weight: 400;
+}

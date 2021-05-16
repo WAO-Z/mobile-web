@@ -1,0 +1,253 @@
+@import "./com";
+
+header {
+    .h_top {
+       
+        width: vw(750);
+        height: vw(150);
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        >img {
+            width: vw(125);
+        }
+
+        >.inp {
+            position: relative;
+            width: vw(270);
+            height: vw(52);
+            border: vw(1) solid #ff9344;
+            border-radius: vw(26);
+            // 搜索图标
+            &::after {
+                content: "";
+                position: absolute;
+                right: vw(16);
+                top: vw(8);
+                width: vw(36);
+                height: vw(34);
+                background: url("../img/搜索矩.png") no-repeat top/cover;
+            }
+            // 搜索框
+            >input {
+                width: vw(183);
+                height: vw(34);
+                font-size: vw(24);
+                margin-top: vw(13);
+                margin-left: vw(27);
+                border: none;
+                outline: none;
+            }
+        }
+
+        // 区域
+        .sel {
+            position: relative;
+            > select {
+            width: vw(160);
+            height: vw(60);
+            border: vw(1) solid $col;
+            box-sizing: border-box; 
+            // selects去除三角形默认样式
+            appearance: none;
+            -webkit-appearance: none;
+            font-size: vw(26);
+            text-indent: vw(17);
+            background-color: #fff;
+
+        } 
+        > i {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: vw(-10);
+            margin-right: vw(16);
+            width: 0;
+            height: 0;
+            border: vw(20) solid transparent;
+            border-top: vw(20) solid $col;
+            // 穿透
+            pointer-events: none;
+        }
+        }
+        
+    }
+
+    .h_bt {
+        width: vw(750);
+        overflow: auto;    
+        > ul {
+            width: vw(750*2);
+            font-size: 0;
+            > li {
+                display: inline-block;
+                white-space: nowrap;
+                width: vw(750);
+                height: vw(287);
+                >img {
+                    width: 100%;
+                }
+            }
+        }
+
+        //进度条
+        .bar {
+            position: absolute;
+            top:vw(330);
+            width: 100%;
+            height: vw(10);
+            background-color: rgba(0,0,0,0.5);
+            > div {
+                position:absolute;
+                left: vw(150);
+                width: vw(130);
+                height: vw(10);
+                background-color: rgba(255,255,255,0.7);
+            }
+        }
+    }
+}
+
+main {
+    .tg {
+        position: relative;
+        top: vw(33);
+        height: vw(291);
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+        .box {
+            display: flex;
+            justify-content:space-between;
+            
+            flex-wrap: wrap;
+            width: vw(590);
+            height: vw(215);
+            margin: vw(15) vw(88) vw(35) vw(88);
+            
+            >img {
+                width: vw(241);
+                height: vw(94);
+                margin-bottom: vw(29);
+            }
+        }
+    }
+    .title_1 {
+        
+        display: flex;
+        justify-content: space-between;
+        width: vw(750);
+
+        
+        .lt {
+            display: flex;
+            align-items: center;
+
+            >img {
+                width: vw(55);
+                margin-left: vw(33);
+            }
+            >h3 {
+                font-size: vw(30);
+                
+                margin-left: vw(8);
+            }
+        }
+        .rt {
+            display: flex;
+            align-items: center;
+
+
+            >img {
+                margin-right: vw(21);
+                width: vw(25);
+            }
+            >h5 {
+                font-size: vw(24);
+               
+                margin-right: vw(8);
+            }
+        }
+       
+    }
+    .xh {
+        position: relative;
+        top: vw(46);
+        height: vw(291);
+         
+       
+        .box {
+            margin-top: vw(33);
+            >p {
+                height: vw(240);
+                background-color: #fff;
+                text-align: center;
+            }
+            .box1 {
+                display: flex;
+                margin-top: vw(30);
+                
+                img {
+                    width: vw(211);
+                    height: vw(164);
+                    margin-left: vw(20);
+                }
+                div:first-of-type {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: vw(164);
+                    margin-left: vw(20);
+                    
+                    h5 {
+                        font-size: vw(30);
+                    }
+                    p {
+                        font-size: vw(22);
+                        color: $fon;
+                    }
+                    span {
+                        font-size: vw(32);
+                        color: $col;
+                    }
+                }
+                div:last-of-type {
+                    height: vw(164);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    position: absolute;
+                    right: vw(17);
+                    font-size: vw (22);
+                    
+                }
+
+            }
+        }
+    }
+
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    justify-content: space-around;
+    align-items: center;
+
+    width: vw(750);
+    height: vw(120);
+    background-color: #fff;
+
+    text-align: center;
+    img {
+        width: vw(73);
+    }
+    h5 {
+        font-size: vw(26);
+        font-weight: 400;
+    }
+}

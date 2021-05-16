@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    color: #000;
+}
+
+@function vw($px) {
+    @return $px / 750 *100 + vw;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// 主题颜色
+$col:#ff9344;
+$fon:#494949;
